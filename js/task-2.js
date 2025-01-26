@@ -5,7 +5,7 @@ function calcAverageCalories(days) {
 
   for (const day of days) {
 
-    if (totalValue.length !== 0) {
+    if (!isNaN(day.calories) && day.calories !== "") {
        totalValue += day.calories;
        validDays++;
     }
